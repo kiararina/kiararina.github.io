@@ -96,6 +96,12 @@ li {
   float: left;
 }
 
+#content-wrapper {
+  margin: 0 auto;
+  width: 95%;
+  max-width: 1024px;
+}
+
 /* Banner Section */
 #banner {
   position: relative;
@@ -153,110 +159,12 @@ li {
   color: #fff;
 }
 
-/* Subspecies Section */
-#subspecies {
-  background-color: #f7f9fa;
-  text-align: center;
-  padding: 50px 20px 80px;
-}
 
-#subspecies .four-column {
-  width: 20%;
-  margin: 1%;
-  background-color: #ffffff;
-  border-radius: 5px 5px 5px 5px;
-  overflow: hidden;
-  border-width: 1px 1px 4px 1px;
-  border-color: #ebebeb;
-  padding: 20px;
-  transition: border 300ms ease 0ms;
-  border: 0 solid #333;
-}
 
-#subspecies h5 {
-  font-style: italic;
-}
 
-#subspecies img {
-  height: 250px;
-  width: 250px;
-}
 
-/* Life Cycle Section */
-#life-cycle {
-  background-color: #f7f9fa;
-  padding: 0 5% 8%;
-  text-align: center;
-}
 
-#life-cycle figure {
-  margin-bottom: 60px;
-}
 
-/* Video Section */
-#media-vid {
-  background-color: #303030;
-  padding: 0;
-  color: #fff;
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  text-align: center;
-}
-
-#media-vid .column-right {
-  padding: 3% 10% 3%;
-}
-
-#media-audio {
-  margin-top: 60px;
-}
-
-/* Additional Info Section */
-#additional-info,
-#additional-info-1 {
-  background-color: #fff;
-  padding: 0;
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  padding: 5% 3%;
-}
-
-#additional-info div,
-#additional-info-1 div {
-  padding: 2%;
-  text-align: justify;
-}
-
-#additional-info h2,
-#additional-info-1 h2 {
-  padding-bottom: 8%;
-}
-
-/* Gallery Section */
-#gallery {
-  padding: 0;
-}
-
-.gallery-photo {
-  /*margin: 5px;*/
-  /*border: 1px solid #ccc;*/
-  float: left;
-  width: 20%;
-  line-height: 0;
-}
-
-.gallery-photo:hover {
-  /*border: 1px solid #777;*/
-}
-
-.gallery-photo img {
-  width: 100%;
-  height: auto;
-}
 
 /* Bottom Section */
 #bottom-wrapper {
@@ -270,15 +178,4 @@ footer {
   max-width: 100%;
   padding: 1px 30px;
   text-align: center;
-}
-
-/* About Page */
-#about {
-  text-align: center;
-  padding-bottom: 50px;
-}
-
-/* Honesty Page */
-#honesty {
-  padding: 20px 80px 40px;
 }
