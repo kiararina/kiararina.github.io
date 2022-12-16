@@ -105,7 +105,7 @@
       <div id="contact">
         <section>
           <h2>CONTACT</h2>
-          <form action="https://httpbin.org/" method="post" class="input-form">
+          <form action="https://httpbin.org/" method="POST" class="input-form">
             <div class="input-wrapper">
               <label for="name">Name: </label>
               <input type="text" name="name" id="name" required>
@@ -117,7 +117,7 @@
             <div class="input-wrapper">
               <label>Gender: </label>
               <div class="option-wrap">
-              <input type="checkbox" id="male" name="male" value="male">
+              <input type="checkbox" id="male" name="male" value="male" checked >
               <label for="male">Male</label>
               </div>
               <div class="option-wrap">
@@ -139,7 +139,7 @@
             </div>
             <div class="input-wrapper">
               <label for="city">City: </label>
-              <input type="text" id="city" name="city" list="city-list" />
+              <input type="text" id="city" name="city" list="city-list" required/>
               <datalist id="city-list">
                 <!--[if lte IE 9]><select><![endif]-->
                 <option label="" value="Abbotsford"></option>
@@ -211,23 +211,30 @@
               </datalist>
             </div>
             <div class="input-wrapper">
+              <label for="postcode">Postal Code: </label>
+              <input id="postcode" type="text" name="postcode" pattern="[A-Za-z][0-9][A-Za-z][ ]?[0-9][A-Za-z][0-9]" required >
+            </div>
+            <div class="input-wrapper">
               <label>Purpose of Contact: </label>
               <div class="option-wrap">
-                <input type="radio" id="question" name="purpose" value="purpose">
+                <input type="radio" id="question" name="purpose" value="purpose" checked onclick="displayRate();">
                 <label for="question">Question</label>  
               </div>
               <div class="option-wrap">
-                <input type="radio" id="Comment" name="purpose" value="comment">
-                <label for="comment">Comment</label>
+                <input type="radio" id="Comment" name="purpose" value="comment" onclick="displayRate();">
+                <label for="comment" >Comment</label>
               </div>
               <div class="option-wrap">
-                <input type="radio" id="hiring" name="purpose" value="hiring">
+                <input type="radio" id="hiring" name="purpose" value="hiring" onclick="displayRate();">
                 <label for="hiring">Hiring</label>
+              </div>
+              <div id="hiring-input" style="display:none">
+                <label>For hiring, specify hourly rate</label> <input type='number' id='position' name='position'>
               </div>
             </div>
             <div class="input-wrapper">
               <label for="message">Message:</label>
-              <textarea id="message" name="message" rows="5" cols="50"></textarea>
+              <textarea id="message" name="message" rows="5" cols="50" required></textarea>
             </div>
             <div class="input-wrapper button-wrapper">
               <input type="submit" value="Submit">
@@ -247,8 +254,6 @@
     <footer>
       <p>© 2022 KRPM. All rights reserved.</p>
     </footer>
-    <!--<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
-  <script>
-  </script>-->
+    <script src="js/script.js"></script>
   </body>
 </html>

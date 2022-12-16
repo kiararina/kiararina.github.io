@@ -302,6 +302,16 @@ li {
   padding: 10px 30px;
 }
 
+#hiring-input label {
+  display: inline-block;
+  margin-right: 5px;
+  font-weight: normal;
+}
+
+#hiring-input input {
+  display: inline-block;
+}
+
 /* Academic Integrity */
 #sm {
   background: #1b242f;
