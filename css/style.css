@@ -1,33 +1,42 @@
-h1 {
-  font-family: 'Open Sans', sans-serif;
-  font-size: 60px;
+html {
+  scroll-behavior: smooth;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Raleway', sans-serif;
   font-style: normal;
   font-variant: normal;
   font-weight: 700;
+  line-height: 1;
+  text-align: center;
+}
+
+h1 {
+  font-size: 60px;
   line-height: 26.4px;
-  /*text-transform: uppercase;*/
 }
 
 h2 {
-  font-family: 'Open Sans', sans-serif;
-  font-size: 30px;
-  font-style: normal;
-  font-variant: normal;
-  font-weight: 700;
-  line-height: 15.4px;
+  font-size: 40px;
+  font-weight: 900;
+  text-transform: uppercase;
+  line-height: 1;
   text-align: center;
-  /*text-transform: uppercase;*/
+  text-transform: uppercase;
 }
 
 h3 {
-  text-align: center;
-  font-family: 'Open Sans', sans-serif;
-  font-size: 40px;
-  font-style: normal;
-  font-variant: normal;
+  font-size: 23px;
   font-weight: 900;
-  line-height: 15.4px;
-  text-transform: uppercase;
+  line-height: 1;
+}
+
+.dark-font {
+  color: #444649;
+}
+
+.light-font {
+  color: #FFF;
 }
 
 section {
@@ -81,6 +90,10 @@ li {
   font-size: 14px;
 }
 
+:focus-visible {
+  outline: 2px solid #fb90b7;
+}
+
 .grid {
   display: grid;
   width: 100%;
@@ -89,6 +102,8 @@ li {
 
 .two-column {
   width: 50%;
+  padding: 0 20px;
+  box-sizing: border-box;
   float: left;
 }
 
@@ -102,6 +117,11 @@ li {
   float: left;
 }
 
+.three-fourth-column {
+  width: 63%;
+  float: right;
+}
+
 #content-wrapper {
   margin: 0 auto;
 }
@@ -109,7 +129,7 @@ li {
 /* Banner Section */
 #banner {
   position: relative;
-  min-height: 500px;
+  min-height: 400px;
   background-color: #252934;
   clear: both;
   background-image: url('../assets/background_3.png');
@@ -123,67 +143,113 @@ li {
 }
 
 #banner img {
-  max-width: 30%;
+  margin: 30px auto 20px;
+  max-width: 80%;
 }
 
 #banner header {
   color: #fff;
+  padding-bottom: 10px;
 }
 
 #banner h1 {
-  padding-top: 20%;
+  line-height: 1;
+  margin: 10px auto;
 }
 
 #banner p {
-  font-size: 20px;
+  font-size: 30px;
+  line-height: 1;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 900;
 }
 
 #menu {
-  margin: 0 auto;
+  margin: 28px auto 0;
+  display: inline-block;
 }
 
 #menu a {
-  color: #dbdbdb;
-  margin-right: 30px;
+  padding: 7px 30px;
+  color: #e41f7b;
+  margin: 10px 5px;
   font-weight: 200;
   font-size: 20px;
+  border: 1px solid #e41f7b;
+  border-radius: 5px;
 }
 
 #menu a:hover {
-  color: #fa6914;
+  color: #fb90b7;
+  border-color: #fb90b7;
   text-decoration: none;
 }
 
 /* Intro Section */
 #intro {
-  background-color: #FFF;
+  background-color: #f5f5f5;
   padding: 40px 100px;
   clear: both;
   overflow: hidden;
+  text-align: center;
+}
+
+#intro h3 {
+  text-align: left;
 }
 
 #intro p {
-  text-align: center;
-  font-size: 17px;
+  margin-top: 0;
+  text-align: justify;
+  font-size: 16px;
   line-height: 2em;
+}
+
+#intro dl {
+  text-align: left;
+  line-height: 2em;
+}
+
+#intro dt {
+  float: left;
+  width: 35%;
+}
+
+/* Education */
+#educ {
+  background: #9e3363;
+  background-image: url('../assets/background_3.png');
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position-y: center;
+  padding: 0 0 20px;
   color: #fff;
+  text-align: center;
+}
+
+#educ h2 {
+  padding-bottom: 0;
+}
+
+#educ strong {
+  font-size: 18px;
 }
 
 /* More Intro */
 #more-intro {
-  background-color: #f5f5f5;
-  padding: 60px 0;
+  background-color: #FFF;
+  padding: 60px 0 0;
 }
 
 #more-intro .three-column {
   text-align: center;
+  margin-bottom: 60px;
 }
 
-#more-intro i {
-  font-size: 80px;
+#more-intro h4 {
   color: #c6075c;
+  text-transform: uppercase;
 }
-
 
 /* Contact */
 #contact {
@@ -192,19 +258,74 @@ li {
   padding: 60px 0;
 }
 
+#contact h2 {
+  padding-bottom: 0;
+  margin-bottom: 5px;
+}
+
 #contact form {
+  width: 600px;
+  max-width: 80%;
   margin: 0 auto;
   border: none;
   box-shadow: none;
 }
 
-/* Academic Integrity */
-#ai {
-  background: #1b242f;
-  padding: 60px 0;
-  color: #fff;
+#contact input[type=text],
+#contact input[type=email], 
+#contact textarea {
+  width: 100%;
+  box-sizing: border-box;
 }
 
+#contact textarea {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 400;
+  line-height: 1.9;
+}
+
+#contact .option-wrap {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+#contact .button-wrapper {
+  text-align: right;
+}
+
+#contact input[type=submit] {
+  background-color: #252934;
+  border-color: #252934;
+  padding: 10px 30px;
+}
+
+/* Academic Integrity */
+#sm {
+  background: #1b242f;
+  padding: 10px 0 0;
+  color: #fff;
+  text-align: justify;
+}
+
+#sm section {
+  padding: 10px;
+}
+
+#sm nav {
+  display: block;
+  text-align: center;
+  margin: 0 auto;
+}
+
+#sm a {
+  padding: 10px 15px;
+  background: #262f38;
+  margin: 0 5px;
+  border-radius: 3px;
+}
 
 /* Bottom Section */
 #bottom-wrapper {
@@ -213,9 +334,17 @@ li {
 
 /* Footer */
 footer {
-  background-color: #1d1d1d;
+  background-color: #1b242f;
   color: #7d7c7c;
   max-width: 100%;
   padding: 1px 30px;
   text-align: center;
+}
+
+footer p {
+  margin-top: 0;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 200;
+  font-size: 15px;
+  color: #5d6b7d;
 }
