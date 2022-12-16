@@ -20,27 +20,33 @@ h2 {
 }
 
 h3 {
+  text-align: center;
   font-family: 'Open Sans', sans-serif;
-  font-size: 18px;
+  font-size: 40px;
   font-style: normal;
   font-variant: normal;
-  font-weight: 700;
+  font-weight: 900;
   line-height: 15.4px;
+  text-transform: uppercase;
 }
 
-.section {
+section {
+  display: block;
+  width: 95%;
+  max-width: 1024px;
   overflow: hidden;
+  margin: 0 auto;
   padding: 20px;
   clear: both;
 }
 
-.section h2 {
+section h2 {
   padding-bottom: 2%;
 }
 
 p {
   font-family: 'Open Sans', sans-serif;
-  font-size: 14px;
+  font-size: 16px;
   font-style: normal;
   font-variant: normal;
   font-weight: 400;
@@ -98,30 +104,34 @@ li {
 
 #content-wrapper {
   margin: 0 auto;
-  width: 95%;
-  max-width: 1024px;
 }
 
 /* Banner Section */
 #banner {
   position: relative;
-  background-color: black;
+  min-height: 500px;
+  background-color: #252934;
   clear: both;
+  background-image: url('../assets/background_3.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#banner span {
+  color: #e41f7b;
+  font-weight: 900;
 }
 
 #banner img {
-  width: 980px;
-  max-width: 80%;
-  height: auto;
-  position: relative;
+  max-width: 30%;
 }
 
 #banner header {
-  position: absolute;
-  z-index: 1;
-  right: 10%;
-  bottom: 5%;
   color: #fff;
+}
+
+#banner h1 {
+  padding-top: 20%;
 }
 
 #banner p {
@@ -129,9 +139,7 @@ li {
 }
 
 #menu {
-  position: absolute;
-  top: 30px;
-  right: 30px;
+  margin: 0 auto;
 }
 
 #menu a {
@@ -148,8 +156,10 @@ li {
 
 /* Intro Section */
 #intro {
-  background-color: #fa6914;
+  background-color: #FFF;
   padding: 40px 100px;
+  clear: both;
+  overflow: hidden;
 }
 
 #intro p {
@@ -159,11 +169,41 @@ li {
   color: #fff;
 }
 
+/* More Intro */
+#more-intro {
+  background-color: #f5f5f5;
+  padding: 60px 0;
+}
+
+#more-intro .three-column {
+  text-align: center;
+}
+
+#more-intro i {
+  font-size: 80px;
+  color: #c6075c;
+}
 
 
+/* Contact */
+#contact {
+  background-color: #86003c;
+  color: #FFF;
+  padding: 60px 0;
+}
 
+#contact form {
+  margin: 0 auto;
+  border: none;
+  box-shadow: none;
+}
 
-
+/* Academic Integrity */
+#ai {
+  background: #1b242f;
+  padding: 60px 0;
+  color: #fff;
+}
 
 
 /* Bottom Section */
