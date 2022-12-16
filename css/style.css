@@ -47,6 +47,7 @@ section {
   margin: 0 auto;
   padding: 20px;
   clear: both;
+  box-sizing: border-box;
 }
 
 section h2 {
@@ -357,4 +358,28 @@ footer p {
   font-weight: 200;
   font-size: 15px;
   color: #5d6b7d;
+}
+
+@media only screen and (max-width: 980px) { 
+  .two-column, .three-column, .four-column {
+    display: block;
+    width: 100%;
+    float: none;
+    margin-bottom: 13px;
+  }
+
+  #intro {
+    padding: 40px 10px 10px;
+  }
+
+  #intro h3 {
+    text-align: center;
+  }
+}
+
+
+@media only screen and (max-width: 400px) {
+  body {
+    background-color: lightblue;
+  }
 }
